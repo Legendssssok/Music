@@ -186,8 +186,8 @@ async def gbanned_list(_, message: Message):
 @UserWrapper
 async def log_(_, message: Message):
     try:
-        if os.path.exists("HellMusic.log"):
-            log = open("HellMusic.log", "r")
+        if os.path.exists("LegendMusic.log"):
+            log = open("LegendMusic.log", "r")
             lines = log.readlines()
             logdata = ""
             try:
@@ -198,7 +198,7 @@ async def log_(_, message: Message):
                 logdata += x
             link = await formatter.bb_paste(logdata)
             return await message.reply_document(
-                "HellMusic.log",
+                "LegendMusic.log",
                 caption=f"**Logs:** {link}",
             )
         else:
