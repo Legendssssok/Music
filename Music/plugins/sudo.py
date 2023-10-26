@@ -116,11 +116,11 @@ async def gungabn(_, message: Message):
     else:
         user_id = message.reply_to_message.from_user.id
         mention = message.reply_to_message.from_user.mention
-    is_gbanned = await db.is_gbanned_user(user_id)
-    if not is_gbanned:
-        return await message.reply_text(
-            f"{mention} is not in {message.command[0][2:]} list."
-        )
+    #is_gbanned = await db.is_gbanned_user(user_id)
+    #if not is_gbanned:
+        #return await message.reply_text(
+            #f"{mention} is not in {message.command[0][2:]} list."
+        #)
     if user_id in Config.BANNED_USERS:
         Config.BANNED_USERS.remove(user_id)
     if message.command[0] == "ungban":
