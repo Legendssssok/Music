@@ -29,7 +29,7 @@ class TEXTS:
         "**📌 Pinged Bot Server!**\n\n"
         "**🏁 Speed:** __{0} ms__\n"
         "**⏳ Uptime:** __{1}__\n"
-        "**🎶 VC Ping:** __{2} ms__"
+        "**🎶 VC Ping:** __{2} ms__\n"
         "**Song:** __LegendBoy__"
     )
     PLAYING = (
