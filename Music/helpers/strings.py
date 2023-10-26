@@ -30,7 +30,6 @@ class TEXTS:
         "**🏁 Speed:** __{0} ms__\n"
         "**⏳ Uptime:** __{1}__\n"
         "**🎶 VC Ping:** __{2} ms__\n"
-        "**Song:** __LegendBoy__"
     )
     PLAYING = (
         "**❆** {0}\n\n"
